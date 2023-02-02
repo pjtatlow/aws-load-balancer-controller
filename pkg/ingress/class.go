@@ -1,8 +1,8 @@
 package ingress
 
 import (
+	elbv2api "github.com/pjtatlow/aws-load-balancer-controller/apis/elbv2/v1beta1"
 	networking "k8s.io/api/networking/v1"
-	elbv2api "sigs.k8s.io/aws-load-balancer-controller/apis/elbv2/v1beta1"
 )
 
 // ClassifiedIngress is Ingress with it's associated IngressClass Configuration

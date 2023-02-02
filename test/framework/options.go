@@ -3,8 +3,8 @@ package framework
 import (
 	"flag"
 
+	"github.com/pjtatlow/aws-load-balancer-controller/test/framework/controller"
 	"github.com/pkg/errors"
-	"sigs.k8s.io/aws-load-balancer-controller/test/framework/controller"
 )
 
 var globalOptions Options

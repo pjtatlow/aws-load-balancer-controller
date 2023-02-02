@@ -5,8 +5,8 @@ import (
 	awssdk "github.com/aws/aws-sdk-go/aws"
 	elbv2sdk "github.com/aws/aws-sdk-go/service/elbv2"
 	"github.com/go-logr/logr"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/aws/services"
 	"github.com/pkg/errors"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/aws/services"
 )
 
 // LoadBalancerManager is responsible for LoadBalancer resources.

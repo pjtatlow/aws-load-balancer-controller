@@ -4,11 +4,11 @@ import (
 	"context"
 	"crypto/tls"
 	"fmt"
+	"github.com/pjtatlow/aws-load-balancer-controller/test/framework"
+	"github.com/pjtatlow/aws-load-balancer-controller/test/framework/utils"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	"net/http"
-	"sigs.k8s.io/aws-load-balancer-controller/test/framework"
-	"sigs.k8s.io/aws-load-balancer-controller/test/framework/utils"
 	"time"
 )
 

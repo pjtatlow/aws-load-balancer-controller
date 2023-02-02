@@ -2,7 +2,7 @@ package deploy
 
 import (
 	"encoding/json"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/model/core"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/model/core"
 )
 
 // StackMarshaller will marshall a resource stack into JSON.

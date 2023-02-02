@@ -5,6 +5,8 @@ import (
 	"fmt"
 
 	awssdk "github.com/aws/aws-sdk-go/aws"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/algorithm"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/annotations"
 	"github.com/pkg/errors"
 	corev1 "k8s.io/api/core/v1"
 	networking "k8s.io/api/networking/v1"
@@ -12,8 +14,6 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/apimachinery/pkg/util/intstr"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/algorithm"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/annotations"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 

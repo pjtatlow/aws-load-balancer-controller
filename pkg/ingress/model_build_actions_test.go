@@ -3,13 +3,13 @@ package ingress
 import (
 	"context"
 	awssdk "github.com/aws/aws-sdk-go/aws"
+	elbv2model "github.com/pjtatlow/aws-load-balancer-controller/pkg/model/elbv2"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	clientgoscheme "k8s.io/client-go/kubernetes/scheme"
-	elbv2model "sigs.k8s.io/aws-load-balancer-controller/pkg/model/elbv2"
 	testclient "sigs.k8s.io/controller-runtime/pkg/client/fake"
 	"testing"
 )

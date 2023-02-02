@@ -3,10 +3,10 @@ package wafv2
 import (
 	"context"
 	"github.com/go-logr/logr"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/model/core"
+	elbv2model "github.com/pjtatlow/aws-load-balancer-controller/pkg/model/elbv2"
+	wafv2model "github.com/pjtatlow/aws-load-balancer-controller/pkg/model/wafv2"
 	"github.com/pkg/errors"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/model/core"
-	elbv2model "sigs.k8s.io/aws-load-balancer-controller/pkg/model/elbv2"
-	wafv2model "sigs.k8s.io/aws-load-balancer-controller/pkg/model/wafv2"
 )
 
 // NewWebACLAssociationSynthesizer constructs new webACLAssociationSynthesizer.

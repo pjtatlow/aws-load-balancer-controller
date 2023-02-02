@@ -7,11 +7,11 @@ import (
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/k8s"
-	elbv2model "sigs.k8s.io/aws-load-balancer-controller/pkg/model/elbv2"
-	"sigs.k8s.io/aws-load-balancer-controller/test/framework"
-	"sigs.k8s.io/aws-load-balancer-controller/test/framework/http"
-	"sigs.k8s.io/aws-load-balancer-controller/test/framework/utils"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/k8s"
+	elbv2model "github.com/pjtatlow/aws-load-balancer-controller/pkg/model/elbv2"
+	"github.com/pjtatlow/aws-load-balancer-controller/test/framework"
+	"github.com/pjtatlow/aws-load-balancer-controller/test/framework/http"
+	"github.com/pjtatlow/aws-load-balancer-controller/test/framework/utils"
 )
 
 var _ = Describe("test ingresses with multiple path and backends", func() {

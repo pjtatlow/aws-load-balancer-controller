@@ -5,8 +5,8 @@ import (
 	"fmt"
 	awssdk "github.com/aws/aws-sdk-go/aws"
 	"github.com/go-logr/logr"
+	elbv2model "github.com/pjtatlow/aws-load-balancer-controller/pkg/model/elbv2"
 	"k8s.io/apimachinery/pkg/util/sets"
-	elbv2model "sigs.k8s.io/aws-load-balancer-controller/pkg/model/elbv2"
 )
 
 type Rule struct {

@@ -3,10 +3,10 @@ package wafregional
 import (
 	"context"
 	"github.com/go-logr/logr"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/model/core"
+	elbv2model "github.com/pjtatlow/aws-load-balancer-controller/pkg/model/elbv2"
+	wafregionalmodel "github.com/pjtatlow/aws-load-balancer-controller/pkg/model/wafregional"
 	"github.com/pkg/errors"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/model/core"
-	elbv2model "sigs.k8s.io/aws-load-balancer-controller/pkg/model/elbv2"
-	wafregionalmodel "sigs.k8s.io/aws-load-balancer-controller/pkg/model/wafregional"
 )
 
 // NewWebACLAssociationSynthesizer constructs new webACLAssociationSynthesizer.

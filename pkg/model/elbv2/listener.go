@@ -3,8 +3,8 @@ package elbv2
 import (
 	"context"
 	"encoding/json"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/model/core"
 	"github.com/pkg/errors"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/model/core"
 )
 
 var _ core.Resource = &Listener{}

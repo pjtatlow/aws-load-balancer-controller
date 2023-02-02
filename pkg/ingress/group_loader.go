@@ -7,11 +7,11 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/annotations"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/k8s"
 	"github.com/pkg/errors"
 	networking "k8s.io/api/networking/v1"
 	"k8s.io/client-go/tools/record"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/annotations"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/k8s"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 

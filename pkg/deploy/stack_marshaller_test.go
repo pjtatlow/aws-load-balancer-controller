@@ -1,8 +1,8 @@
 package deploy
 
 import (
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/model/core"
 	"github.com/stretchr/testify/assert"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/model/core"
 	"testing"
 )
 

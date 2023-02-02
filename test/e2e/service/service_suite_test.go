@@ -3,7 +3,7 @@ package service
 import (
 	"testing"
 
-	"sigs.k8s.io/aws-load-balancer-controller/test/framework"
+	"github.com/pjtatlow/aws-load-balancer-controller/test/framework"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"

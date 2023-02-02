@@ -1,8 +1,8 @@
 package http
 
 import (
+	"github.com/pjtatlow/aws-load-balancer-controller/test/framework/utils"
 	gohttp "net/http"
-	"sigs.k8s.io/aws-load-balancer-controller/test/framework/utils"
 )
 
 // Verifier is responsible for verify the behavior of an HTTP endpoint.

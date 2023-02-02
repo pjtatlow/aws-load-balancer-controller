@@ -9,17 +9,17 @@ import (
 	"github.com/aws/aws-sdk-go/service/ec2"
 	elbv2sdk "github.com/aws/aws-sdk-go/service/elbv2"
 	"github.com/golang/mock/gomock"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/annotations"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/config"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/deploy"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/deploy/elbv2"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/deploy/tracking"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/networking"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/intstr"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/annotations"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/config"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/deploy"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/deploy/elbv2"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/deploy/tracking"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/networking"
 )
 
 func Test_defaultModelBuilderTask_Build(t *testing.T) {

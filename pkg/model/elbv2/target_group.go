@@ -2,9 +2,9 @@ package elbv2
 
 import (
 	"context"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/model/core"
 	"github.com/pkg/errors"
 	"k8s.io/apimachinery/pkg/util/intstr"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/model/core"
 )
 
 var _ core.Resource = &TargetGroup{}

@@ -4,12 +4,12 @@ import (
 	"strings"
 	"time"
 
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/aws"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/inject"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/model/elbv2"
 	"github.com/pkg/errors"
 	"github.com/spf13/pflag"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/aws"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/inject"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/model/elbv2"
 )
 
 const (

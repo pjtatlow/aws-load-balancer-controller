@@ -8,9 +8,9 @@ import (
 	"regexp"
 
 	awssdk "github.com/aws/aws-sdk-go/aws"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/algorithm"
-	ec2model "sigs.k8s.io/aws-load-balancer-controller/pkg/model/ec2"
-	elbv2model "sigs.k8s.io/aws-load-balancer-controller/pkg/model/elbv2"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/algorithm"
+	ec2model "github.com/pjtatlow/aws-load-balancer-controller/pkg/model/ec2"
+	elbv2model "github.com/pjtatlow/aws-load-balancer-controller/pkg/model/elbv2"
 )
 
 const (

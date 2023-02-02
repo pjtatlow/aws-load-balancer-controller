@@ -3,8 +3,8 @@ package ingress
 import (
 	"context"
 	"fmt"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/k8s"
 	networking "k8s.io/api/networking/v1"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/k8s"
 )
 
 const (

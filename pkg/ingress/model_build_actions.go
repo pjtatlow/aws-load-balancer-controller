@@ -4,11 +4,11 @@ import (
 	"context"
 	"fmt"
 	awssdk "github.com/aws/aws-sdk-go/aws"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/model/core"
+	elbv2model "github.com/pjtatlow/aws-load-balancer-controller/pkg/model/elbv2"
 	"github.com/pkg/errors"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/types"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/model/core"
-	elbv2model "sigs.k8s.io/aws-load-balancer-controller/pkg/model/elbv2"
 	"strings"
 	"unicode"
 )

@@ -8,15 +8,15 @@ import (
 	"strings"
 
 	awssdk "github.com/aws/aws-sdk-go/aws"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/algorithm"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/annotations"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/k8s"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/model/core"
+	elbv2model "github.com/pjtatlow/aws-load-balancer-controller/pkg/model/elbv2"
 	"github.com/pkg/errors"
 	networking "k8s.io/api/networking/v1"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/algorithm"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/annotations"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/k8s"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/model/core"
-	elbv2model "sigs.k8s.io/aws-load-balancer-controller/pkg/model/elbv2"
 )
 
 func (t *defaultModelBuildTask) buildListener(ctx context.Context, lbARN core.StringToken, port int64, config listenPortConfig, ingList []ClassifiedIngress) (*elbv2model.Listener, error) {

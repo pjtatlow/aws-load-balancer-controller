@@ -5,7 +5,7 @@ import (
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	framework "sigs.k8s.io/aws-load-balancer-controller/test/framework"
+	framework "github.com/pjtatlow/aws-load-balancer-controller/test/framework"
 )
 
 var tf *framework.Framework

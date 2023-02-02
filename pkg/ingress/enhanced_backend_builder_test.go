@@ -6,6 +6,8 @@ import (
 
 	awssdk "github.com/aws/aws-sdk-go/aws"
 	"github.com/google/go-cmp/cmp"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/annotations"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/equality"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	corev1 "k8s.io/api/core/v1"
@@ -15,8 +17,6 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/apimachinery/pkg/util/intstr"
 	clientgoscheme "k8s.io/client-go/kubernetes/scheme"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/annotations"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/equality"
 	testclient "sigs.k8s.io/controller-runtime/pkg/client/fake"
 )
 

@@ -3,11 +3,11 @@ package elbv2
 import (
 	"context"
 	"github.com/go-logr/logr"
+	elbv2api "github.com/pjtatlow/aws-load-balancer-controller/apis/elbv2/v1beta1"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/deploy/tracking"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/model/core"
+	elbv2model "github.com/pjtatlow/aws-load-balancer-controller/pkg/model/elbv2"
 	"k8s.io/apimachinery/pkg/util/sets"
-	elbv2api "sigs.k8s.io/aws-load-balancer-controller/apis/elbv2/v1beta1"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/deploy/tracking"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/model/core"
-	elbv2model "sigs.k8s.io/aws-load-balancer-controller/pkg/model/elbv2"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 

@@ -8,8 +8,8 @@ import (
 	awssdk "github.com/aws/aws-sdk-go/aws"
 	ec2sdk "github.com/aws/aws-sdk-go/service/ec2"
 	"github.com/go-logr/logr"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/aws/services"
 	"k8s.io/apimachinery/pkg/util/cache"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/aws/services"
 )
 
 const defaultVPCInfoCacheTTL = 10 * time.Minute

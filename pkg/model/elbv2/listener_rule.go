@@ -1,7 +1,7 @@
 package elbv2
 
 import (
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/model/core"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/model/core"
 )
 
 var _ core.Resource = &ListenerRule{}

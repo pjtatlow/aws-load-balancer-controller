@@ -2,8 +2,8 @@ package ingress
 
 import (
 	"context"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/annotations"
 	"github.com/stretchr/testify/assert"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/annotations"
 	"testing"
 )
 

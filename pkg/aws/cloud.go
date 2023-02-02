@@ -10,13 +10,13 @@ import (
 	"github.com/aws/aws-sdk-go/aws/endpoints"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/ec2"
+	epresolver "github.com/pjtatlow/aws-load-balancer-controller/pkg/aws/endpoints"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/aws/metrics"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/aws/services"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/aws/throttle"
 	"github.com/pkg/errors"
 	"github.com/prometheus/client_golang/prometheus"
 	amerrors "k8s.io/apimachinery/pkg/util/errors"
-	epresolver "sigs.k8s.io/aws-load-balancer-controller/pkg/aws/endpoints"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/aws/metrics"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/aws/services"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/aws/throttle"
 )
 
 type Cloud interface {

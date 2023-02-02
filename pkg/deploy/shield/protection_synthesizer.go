@@ -3,11 +3,11 @@ package shield
 import (
 	"context"
 	"github.com/go-logr/logr"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/model/core"
+	elbv2model "github.com/pjtatlow/aws-load-balancer-controller/pkg/model/elbv2"
+	shieldmodel "github.com/pjtatlow/aws-load-balancer-controller/pkg/model/shield"
 	"github.com/pkg/errors"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/model/core"
-	elbv2model "sigs.k8s.io/aws-load-balancer-controller/pkg/model/elbv2"
-	shieldmodel "sigs.k8s.io/aws-load-balancer-controller/pkg/model/shield"
 )
 
 const (

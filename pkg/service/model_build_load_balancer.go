@@ -10,17 +10,17 @@ import (
 	"sort"
 	"strconv"
 
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/algorithm"
-	elbv2deploy "sigs.k8s.io/aws-load-balancer-controller/pkg/deploy/elbv2"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/algorithm"
+	elbv2deploy "github.com/pjtatlow/aws-load-balancer-controller/pkg/deploy/elbv2"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/ec2"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/annotations"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/config"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/deploy/tracking"
+	elbv2model "github.com/pjtatlow/aws-load-balancer-controller/pkg/model/elbv2"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/networking"
 	"github.com/pkg/errors"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/annotations"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/config"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/deploy/tracking"
-	elbv2model "sigs.k8s.io/aws-load-balancer-controller/pkg/model/elbv2"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/networking"
 )
 
 const (

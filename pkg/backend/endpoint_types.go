@@ -1,10 +1,10 @@
 package backend
 
 import (
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/k8s"
 	corev1 "k8s.io/api/core/v1"
 	discv1 "k8s.io/api/discovery/v1beta1"
 	"k8s.io/apimachinery/pkg/labels"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/k8s"
 )
 
 // An endpoint provided by pod directly.

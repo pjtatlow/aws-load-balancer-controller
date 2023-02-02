@@ -2,8 +2,8 @@ package tracking
 
 import (
 	"fmt"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/algorithm"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/model/core"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/algorithm"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/model/core"
 )
 
 //we use AWS tags and K8s labels to track resources we have created.

@@ -4,12 +4,12 @@ import (
 	"context"
 	"testing"
 
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/annotations"
+	elbv2model "github.com/pjtatlow/aws-load-balancer-controller/pkg/model/elbv2"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/annotations"
-	elbv2model "sigs.k8s.io/aws-load-balancer-controller/pkg/model/elbv2"
 )
 
 func Test_defaultModelBuilderTask_buildListenerALPNPolicy(t *testing.T) {

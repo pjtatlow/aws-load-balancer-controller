@@ -1,10 +1,10 @@
 package service
 
 import (
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/annotations"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/config"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/k8s"
 	corev1 "k8s.io/api/core/v1"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/annotations"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/config"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/k8s"
 )
 
 // ServiceUtils to check if the service is supported by the controller

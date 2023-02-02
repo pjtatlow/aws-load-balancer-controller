@@ -6,21 +6,21 @@ import (
 	"testing"
 
 	elbv2sdk "github.com/aws/aws-sdk-go/service/elbv2"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/model/core"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/networking"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/model/core"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/networking"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/ec2"
 	"github.com/golang/mock/gomock"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/annotations"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/config"
+	elbv2deploy "github.com/pjtatlow/aws-load-balancer-controller/pkg/deploy/elbv2"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/deploy/tracking"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/model/elbv2"
 	"github.com/stretchr/testify/assert"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/annotations"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/config"
-	elbv2deploy "sigs.k8s.io/aws-load-balancer-controller/pkg/deploy/elbv2"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/deploy/tracking"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/model/elbv2"
 )
 
 const lbAttrsDeletionProtectionEnabled = "deletion_protection.enabled"

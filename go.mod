@@ -1,4 +1,4 @@
-module sigs.k8s.io/aws-load-balancer-controller
+module github.com/pjtatlow/aws-load-balancer-controller
 
 go 1.19
 

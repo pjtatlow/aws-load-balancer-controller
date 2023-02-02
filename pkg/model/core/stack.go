@@ -1,9 +1,9 @@
 package core
 
 import (
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/model/core/graph"
 	"github.com/pkg/errors"
 	"reflect"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/model/core/graph"
 )
 
 // Stack presents a resource graph, where resources can depend on each other.

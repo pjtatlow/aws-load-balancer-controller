@@ -2,12 +2,12 @@ package fixture
 
 import (
 	"context"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/k8s"
+	"github.com/pjtatlow/aws-load-balancer-controller/test/framework"
+	"github.com/pjtatlow/aws-load-balancer-controller/test/framework/utils"
 	"github.com/pkg/errors"
 	apierrs "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/util/wait"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/k8s"
-	"sigs.k8s.io/aws-load-balancer-controller/test/framework"
-	"sigs.k8s.io/aws-load-balancer-controller/test/framework/utils"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/client/apiutil"
 	"sort"

@@ -2,12 +2,12 @@ package ingress
 
 import (
 	"context"
+	"github.com/pjtatlow/aws-load-balancer-controller/pkg/annotations"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	networking "k8s.io/api/networking/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"sigs.k8s.io/aws-load-balancer-controller/pkg/annotations"
 	"testing"
 )
 
